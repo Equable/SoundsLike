@@ -1,0 +1,37 @@
+body {
+    background: rgb(24,24,24);
+    color: white;
+}
+
+h1{
+    padding: 1rem;
+    text-shadow: 10px 20px 20px black;
+}
+
+h6{
+    text-shadow: 5px 7px 7px black;
+}
+
+img{
+    margin-top: 2rem;
+    box-shadow: 10px 20px 20px  black;
+}
+
+.sliders-container{
+    width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.irs-line{
+    box-shadow: 7px 10px 7px  black;
+}
+p{
+    text-shadow: 5px 7px 7px  black;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #1db954 !important;
+    border: #1db954;
+    box-shadow: 7px 10px 15px black;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}

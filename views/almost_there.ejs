@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SoundsLike - Almost There</title>
+
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="/ion/css/ion.rangeSlider.css" type="text/css" rel="stylesheet">
+    <link href="/ion/css/ion.rangeSlider.skinModern.css" type="text/css" rel="stylesheet">
+    <link href="/public/css/almost_there.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="text-center">
+        
+        <img src="<%= almostThere.coverIMG.url %>" alt="">
+        
+        <h1>
+            <%= almostThere.artistName %>
+        </h1>
+        <h6>Danceability:
+                <%= almostThere.soundsLikeThis.danceability %>
+        </h6>
+        <h6>Energy:
+                <%= almostThere.soundsLikeThis.energy %>
+        </h6>
+        <h6>Acousticness:
+                <%= almostThere.soundsLikeThis.acousticness %>
+        </h6>
+        <h6>Instrumentalness:
+                <%= almostThere.soundsLikeThis.instrumentalness %>
+        </h6>
+        <h6>Speechiness:
+                <%= almostThere.soundsLikeThis.speechiness %>
+        </h6>
+        <h6>Valence:
+                <%= almostThere.soundsLikeThis.valence %>
+        </h6>
+        <div class = "sliders-container">
+                <h1>Search Parameters</h1>
+                <p>Please select the desired ranges for each parameter, increasing will vary the recommendation more (leave unchanged for closest results) </p>
+                </br><h6>Danceability<h6></br>
+                <input type="text" id="dance" name="Danceability" value="" >
+                <h6>Energy<h6></br>
+                <input type="text" id="energy" name="Energy" value="" >
+                <h6>Acousticness<h6></br>
+                <input type="text" id="acoust" name="Acousticness" value="" >
+                <h6>Instrumentalness<h6></br>
+                <input type="text" id="instru" name="Instrumentalness" value="" >
+                <h6>Speechiness<h6></br>
+                <input type="text" id="speech" name="Speechiness" value="" >
+                <h6>Valence<h6></br>
+                <input type="text" id="valence" name="Valence" value="" >
+        </div>
+        <form id="search-form">
+                <input type="submit" id="search" class="btn btn-primary" value="Search" />
+        </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/ion/js/ion.rangeSlider.min.js"></script>
+<script src = "/public/js/almost_there.js"></script>
+</html>

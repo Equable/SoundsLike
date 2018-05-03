@@ -1,0 +1,24 @@
+{
+  "name": "spotify-api",
+  "version": "1.0.0",
+  "description": "Takes data from the spotify api to give a result based on a query",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "music",
+    "query",
+    "spotify"
+  ],
+  "author": "Louis",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.1.0",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "ion-rangeslider": "^2.2.0",
+    "request": "^2.85.0"
+  }
+}
