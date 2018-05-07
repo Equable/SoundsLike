@@ -22,6 +22,7 @@ $.ajax({
 var trackID = undefined;
 var coverIMG = undefined;
 var artistName = undefined;
+var songName = undefined;
 
 var searchTrack = function (query) {
     $.ajax({
@@ -32,13 +33,14 @@ var searchTrack = function (query) {
         },
         data: {
             q: query,
-            type: 'track',
+            type: 'track,artist',
             limit: 1
         },
 
         success: function (response) {
             console.log(response);
             trackID = response.tracks.items[0].id;
+            songName = response.tracks.items[0].name;
             coverIMG = response.tracks.items[0].album.images[0];
             artistName = response.tracks.items[0].artists[0].name;
             trackFeatures(trackID);
@@ -72,7 +74,7 @@ var takeitback = function (response) {
     $.ajax({
         url: 'http://localhost:8888/almost_there',
         type: "POST",
-        data: { soundsLikeThis, coverIMG, artistName},
+        data: { soundsLikeThis, coverIMG, artistName, songName},
 
         success: function (post) {
            window.location.replace('/almost_there');

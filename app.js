@@ -24,6 +24,7 @@ app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist')
 app.use('/ion', express.static(__dirname + '/node_modules/ion-rangeslider'));
 app.use('/public', express.static(__dirname + '/public'));
 app.use('/images', express.static(__dirname + '/images'));
+app.use('/typeahead', express.static(__dirname + '/bower_components/typeahead.js/dist'));
 
 //used to read information sent to server from client
 app.use(bodyParser.json({limit: '50mb'}));
@@ -87,8 +88,8 @@ app.use(function (req, res, next) {
 
 //spotify Authentication
 //
-var client_id = 'your id'; // Your client id
-var client_secret = 'your secret'; // Your secret
+var client_id = 'enter your id from spotify'; // Your client id
+var client_secret = 'enter your secret from spotify'; // Your secret
 
 // your application requests authorization
 var authOptions = {

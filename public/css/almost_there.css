@@ -4,12 +4,17 @@ body {
 }
 
 h1{
-    padding: 1rem;
+    padding-top: 1rem;
     text-shadow: 10px 20px 20px black;
 }
 
 h6{
     text-shadow: 5px 7px 7px black;
+}
+
+h3{
+    text-shadow: 5px 7px 7px black;
+    padding-bottom: 1rem;
 }
 
 img{

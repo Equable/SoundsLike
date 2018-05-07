@@ -1,0 +1,18 @@
+{
+  "name": "spotify-api",
+  "description": "Takes data from the spotify api to give a result based on a query",
+  "main": "app.js",
+  "authors": [
+    "Louis"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "music",
+    "query",
+    "spotify"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "typeahead.js": "^0.11.1"
+  }
+}
