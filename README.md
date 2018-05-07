@@ -19,12 +19,13 @@
 >>6. The Application then POST's the response to the node server where the data is stored in a variable to be rendered in the 'results' EJS page.
 
 <h2><b><u>How to use</u></b></h2>
->1. Make sure you have the latest version of node.js installed. You can find it [here](https://nodejs.org/en/download/)
->2. Obtain a client id/secret id from spotify to use this app which can be obtatined [here](https://beta.developer.spotify.com/dashboard/)
->3. Clone the Soundslike Webapp Repo
+
+>1. Make sure you have the latest version of node.js installed. You can find it [here](https://nodejs.org/en/download/).
+>2. Obtain a client id/secret id from spotify to use this app which can be obtatined [here](https://beta.developer.spotify.com/dashboard/).
+>3. Clone the Soundslike Webapp Repo.
 >4. Once you've obtained both ids from spotify navigate to line 91 & 92 of app.js and replace the value for the two parameters with your own clientID and secret.
->5. Save your changes and open the command terminal. Navigate to the location of the repository and run app.js with Node app.js
->6. You should now be able to navigate to the webapp in your browser using the url: localhost:8888
+>5. Save your changes and open the command terminal. Navigate to the location of the repository and run app.js with Node app.js.
+>6. You should now be able to navigate to the webapp in your browser using the url: localhost:8888.
 
 <h2><b><u>Webapp Looks</u></b></h2>
 
