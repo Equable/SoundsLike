@@ -88,8 +88,8 @@ app.use(function (req, res, next) {
 
 //spotify Authentication
 //
-var client_id = 'enter your id from spotify'; // Your client id
-var client_secret = 'enter your secret from spotify'; // Your secret
+var client_id = 'replace with your client id here'; // Your client id
+var client_secret = 'replace with your client secret here'; // Your secret 
 
 // your application requests authorization
 var authOptions = {
