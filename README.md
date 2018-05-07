@@ -46,6 +46,9 @@
 
 <h2><b><u>Version</u></b></h2>
 
+>* 1.1: Artist filter
+>   * Added artist filter to the app, can now filter song choice further by adding the artist to the query.
+>   * Added song name to the /almost_there page for confirmation of song selected.
 >* 1.0: Primary release
 >   * Recommends tracks based on entered track and ranges selected
 >   * Displays up to 5 results. Each time the results are random out of all possible recommendations within the given parameters
