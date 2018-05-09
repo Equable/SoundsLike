@@ -2,7 +2,7 @@
 var token = undefined;
 var soundsLikeThis = undefined;
 $.ajax({
-    url: 'http://localhost:8888/auth',
+    url: '/auth',
     type: "GET",
     dataType: "json",
     success: function (data) {
@@ -72,7 +72,7 @@ var trackFeatures = function (trackID) {
 //POST to nodejs server for new render view
 var takeitback = function (response) {
     $.ajax({
-        url: 'http://localhost:8888/almost_there',
+        url: '/almost_there',
         type: "POST",
         data: { soundsLikeThis, coverIMG, artistName, songName},
 
