@@ -83,7 +83,7 @@ app.get('/results', function (req, res){
 //404 response
 app.use(function (req, res, next) {
   res.status(404);
-  res.render('404', { url: 'localhost:8888' + req.url });
+  res.render('404', { url: req.url });
 });
 
 //spotify Authentication
