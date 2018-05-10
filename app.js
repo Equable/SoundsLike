@@ -83,13 +83,13 @@ app.get('/results', function (req, res){
 //404 response
 app.use(function (req, res, next) {
   res.status(404);
-  res.render('404', { url: req.url });
+  res.render('404', { url: 'localhost:8888' + req.url });
 });
 
 //spotify Authentication
 //
-var client_id = 'replace with your client id here'; // Your client id
-var client_secret = 'replace with your client secret here'; // Your secret 
+var client_id = 'your id goes here'; // Your client id
+var client_secret = 'your secret goes here'; // Your secret
 
 // your application requests authorization
 var authOptions = {

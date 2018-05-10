@@ -1,7 +1,7 @@
 <h1><b>SoundsLike Webapp</b></h1>
 
 <h3><b>Author: Louis Huerta-Blake</b></h3>
-<h4><b>README Last Edited: 5/3/2018</b><h4>
+<h4><b>README Last Edited: 5/10/2018</b><h4>
 
 <h2><b><u>Summary</u></b></h2>
 
@@ -46,6 +46,12 @@
 
 <h2><b><u>Version</u></b></h2>
 
+>* 1.2: Mobile Responsiveness
+>   * Added mobile scaling to the pages. Should no longer overflow and scale to the screen correctly
+>   * Upcoming Updates:
+>       * Adding links to recommended songs and artists in next update
+>       * Clearing code for readibility (ongoing)
+>       * typeahead will be coming within the next week
 >* 1.1: Artist filter
 >   * Added artist filter to the app, can now filter song choice further by adding the artist to the query.
 >   * Added song name to the /almost_there page for confirmation of song selected.
@@ -58,3 +64,4 @@
 >* Currently if multiple artists share a song name, the search will select the most popular of potential choices. Future plan to add artist option in the query or typeahead.
 >* Beautification of the page will be continuing in future releases.
 >* Considering adding album images for each of the recommended tracks
+>* cleaning code: seperating into multiple JS files for ease of readibility and adding comments

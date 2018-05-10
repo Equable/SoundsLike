@@ -78,115 +78,109 @@ var sliders = function () {
     $("#dance").ionRangeSlider({
         type: "double",
         min: 0,
-        max: 1,
-        from: minmaxarray[0],
-        to: minmaxarray[1],
-        step: 0.1,
+        max: 100,
+        from: minmaxarray[0]*100,
+        to: minmaxarray[1]*100,
+        step: 1,
         hide_min_max: true,
+        postfix: "%",
         onStart: function(data){
-            queryarray[0] = data.from;
-            queryarray[1] = data.to;
-            console.log(queryarray);
+            queryarray[0] = data.from/100;
+            queryarray[1] = data.to/100;
         },
         onFinish: function(data){
-            queryarray[0] = data.from;
-            queryarray[1] = data.to;
-            console.log(queryarray);
+            queryarray[0] = data.from/100;
+            queryarray[1] = data.to/100;
         }
     });
     $("#energy").ionRangeSlider({
         type: "double",
         min: 0,
-        max: 1,
-        from: minmaxarray[2],
-        to: minmaxarray[3],
-        step: 0.1,
+        max: 100,
+        from: minmaxarray[2]*100,
+        to: minmaxarray[3]*100,
+        step: 1,
         hide_min_max: true,
+        postfix: "%",
         onStart: function(data){
-            queryarray[2] = data.from;
-            queryarray[3] = data.to;
-            console.log(queryarray);
+            queryarray[2] = data.from/100;
+            queryarray[3] = data.to/100;
         },
         onFinish: function(data){
-            queryarray[2] = data.from;
-            queryarray[3] = data.to;
-            console.log(queryarray);
+            queryarray[2] = data.from/100;
+            queryarray[3] = data.to/100;
         }
     });
     $("#acoust").ionRangeSlider({
         type: "double",
         min: 0,
-        max: 1,
-        from: minmaxarray[4],
-        to: minmaxarray[5],
-        step: 0.1,
+        max: 100,
+        from: minmaxarray[4]*100,
+        to: minmaxarray[5]*100,
+        step: 1,
         hide_min_max: true,
+        postfix: "%",
         onStart: function(data){
-            queryarray[4] = data.from;
-            queryarray[5] = data.to;
-            console.log(queryarray);
+            queryarray[4] = data.from/100;
+            queryarray[5] = data.to/100;
         },
         onFinish: function(data){
-            queryarray[4] = data.from;
-            queryarray[5] = data.to;
-            console.log(queryarray);
+            queryarray[4] = data.from/100;
+            queryarray[5] = data.to/100;
         }
     });
     $("#instru").ionRangeSlider({
         type: "double",
         min: 0,
-        max: 1,
-        from: minmaxarray[6],
-        to: minmaxarray[7],
-        step: 0.1,
+        max: 100,
+        from: minmaxarray[6]*100,
+        to: minmaxarray[7]*100,
+        step: 1,
         hide_min_max: true,
+        postfix: "%",
         onStart: function(data){
-            queryarray[6] = data.from;
-            queryarray[7] = data.to;
-            console.log(queryarray);
+            queryarray[6] = data.from/100;
+            queryarray[7] = data.to/100;
         },
         onFinish: function(data){
-            queryarray[6] = data.from;
-            queryarray[7] = data.to;
-            console.log(queryarray);
+            queryarray[6] = data.from/100;
+            queryarray[7] = data.to/100;
         }
     });
     $("#speech").ionRangeSlider({
         type: "double",
         min: 0,
-        max: 1,
-        from: minmaxarray[8],
-        to: minmaxarray[9],
-        step: 0.1,
+        max: 100,
+        from: minmaxarray[8]*100,
+        to: minmaxarray[9]*100,
+        step: 1,
         hide_min_max: true,
+        postfix: "%",
         onStart: function(data){
-            queryarray[8] = data.from;
-            queryarray[9] = data.to;
-            console.log(queryarray);
+            queryarray[8] = data.from/100;
+            queryarray[9] = data.to/100;
         },
         onFinish: function(data){
-            queryarray[8] = data.from;
-            queryarray[9] = data.to;
-            console.log(queryarray);
+            queryarray[8] = data.from/100;
+            queryarray[9] = data.to/100;
         }
     });
     $("#valence").ionRangeSlider({
         type: "double",
         min: 0,
-        max: 1,
-        from: minmaxarray[10],
-        to: minmaxarray[11],
-        step: 0.1,
+        max: 100,
+        from: minmaxarray[10]*100,
+        to: minmaxarray[11]*100,
+        step: 1,
         hide_min_max: true,
+        postfix: "%",
         onStart: function(data){
-            queryarray[10] = data.from;
-            queryarray[11] = data.to;
-            console.log(queryarray);
+            queryarray[10] = data.from/100;
+            queryarray[11] = data.to/100;
         },
         onFinish: function(data){
-            queryarray[10] = data.from;
-            queryarray[11] = data.to;
-            console.log(queryarray);
+            queryarray[10] = data.from/100;
+            queryarray[11] = data.to/100;
         }
     });
 };
@@ -217,7 +211,6 @@ var finalRecommendation = function(data){
         },
         success: function(response){
             finalRun(response);
-            console.log(response);
         }
 
     });

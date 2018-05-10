@@ -17,7 +17,7 @@
 
 <body>
 
-    <div class="text-center">
+    <div class="container">
         
         <img src="<%= almostThere.coverIMG.url %>" alt="">
         
@@ -28,22 +28,22 @@
                 <%= almostThere.songName %>
         </h3>
         <h6>Danceability:
-                <%= almostThere.soundsLikeThis.danceability %>
+                <%= (almostThere.soundsLikeThis.danceability * 100).toFixed(0) %>%
         </h6>
         <h6>Energy:
-                <%= almostThere.soundsLikeThis.energy %>
+                <%= (almostThere.soundsLikeThis.energy * 100).toFixed(0) %>%
         </h6>
         <h6>Acousticness:
-                <%= almostThere.soundsLikeThis.acousticness %>
+                <%= (almostThere.soundsLikeThis.acousticness * 100).toFixed(0)%>%
         </h6>
         <h6>Instrumentalness:
-                <%= almostThere.soundsLikeThis.instrumentalness %>
+                <%= (almostThere.soundsLikeThis.instrumentalness * 100).toFixed(0) %>%
         </h6>
         <h6>Speechiness:
-                <%= almostThere.soundsLikeThis.speechiness %>
+                <%= (almostThere.soundsLikeThis.speechiness * 100).toFixed(0) %>%
         </h6>
         <h6>Valence:
-                <%= almostThere.soundsLikeThis.valence %>
+                <%= (almostThere.soundsLikeThis.valence * 100).toFixed(0) %>%
         </h6>
         <div class = "sliders-container">
                 <h1>Search Parameters</h1>
