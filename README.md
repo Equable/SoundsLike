@@ -25,7 +25,7 @@
 >3. Clone the Soundslike Webapp Repo.
 >4. Once you've obtained both ids from spotify navigate to line 91 & 92 of app.js and replace the value for the two parameters with your own clientID and secret.
 >5. Save your changes and open the command terminal. Navigate to the location of the repository and run app.js with Node app.js.
->6. You should now be able to navigate to the webapp in your browser using the url: localhost:8888.
+>6. You should now be able to navigate to the webapp in your browser using the url: localhost:8888 or using your hosting computers ip address followed by port 8888 (192.168.1.20:8888) for any computer on your LAN.
 
 <h2><b><u>Webapp Looks</u></b></h2>
 
