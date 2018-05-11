@@ -77,7 +77,7 @@ var takeitback = function (response) {
         data: { soundsLikeThis, coverIMG, artistName, songName},
 
         success: function (post) {
-           window.location.replace('/almost_there');
+           window.location.href = ('/almost_there');
         }
     });
 };

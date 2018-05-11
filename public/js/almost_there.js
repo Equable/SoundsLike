@@ -223,7 +223,7 @@ var finalRun = function(data){
         type: "POST",
         data: {data},
         success: function(post){
-            window.location.replace('/results');
+            window.location.href = ('/results');
         }
 
     });

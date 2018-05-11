@@ -45,7 +45,9 @@
 
 
 <h2><b><u>Version</u></b></h2>
-
+>* 1.3: Song Previews
+>   * Added song previews when available for each song recommended
+>   * fixed a bug where the back button would not work
 >* 1.2: Mobile Responsiveness
 >   * Added mobile scaling to the pages. Should no longer overflow and scale to the screen correctly
 >   * Upcoming Updates:

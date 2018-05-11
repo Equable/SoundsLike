@@ -34,6 +34,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true, parameterLimit: 10
 //
 //home page
 app.get('/', function (req, res) {
+  res.setHeader('Cache-Control', 'no-cache, no-store');
   res.render('spotify_soundslike', { token });
 });
 
@@ -62,6 +63,7 @@ app.post('/almost_there', function (req, res) {
 });
 
 app.get('/almost_there', function(req, res){
+  res.setHeader('Cache-Control', 'no-cache, no-store');
   res.render('almost_there', {almostThere});
 });
 
@@ -75,6 +77,7 @@ app.post('/results', function (req, res) {
 });
 
 app.get('/results', function (req, res){
+  res.setHeader('Cache-Control', 'no-cache, no-store');
   res.render('results', {finalResults});
 });
 
