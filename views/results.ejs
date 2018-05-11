@@ -19,11 +19,25 @@
 <tr>
     <th> Song </th>
     <th> Artist </th>
+    <th> Preview </th>
 </tr>
 <% for(var i=0; i < finalResults.tracks.length; i++) { %>
    <tr>
-     <td><%= finalResults.tracks[i].name %></td>
-     <td><%= finalResults.tracks[i].artists[0].name %></td>
+    <td>
+        <%= finalResults.tracks[i].name %>
+    </td>
+    <td>
+        <%= finalResults.tracks[i].artists[0].name %>
+    </td>
+    <td>
+        <%if (finalResults.tracks[i].preview_url == "") { %>
+            No Preview Available
+        <% } else { %>
+            <audio controls>
+                <source src="<%= finalResults.tracks[i].preview_url%>" type = "audio/mp4">
+            </audio>
+        <% } %>  
+    </td>
    </tr>
 <% } %>
 </table>
@@ -32,5 +46,15 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $.ajax({
+        url: '/tests',
+        type: "get",
+        datatype: "json",
+        success: function(response){
+            console.log(response);
+        }
+    });
+</script>
 
 </html>
