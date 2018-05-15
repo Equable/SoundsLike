@@ -45,6 +45,7 @@
 
 
 <h2><b><u>Version</u></b></h2>
+
 >* 1.3: Song Previews
 >   * Added song previews when available for each song recommended
 >   * fixed a bug where the back button would not work
