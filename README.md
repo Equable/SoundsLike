@@ -1,7 +1,7 @@
 <h1><b>SoundsLike Webapp</b></h1>
 
 <h3><b>Author: Louis Huerta-Blake</b></h3>
-<h4><b>README Last Edited: 5/15/2018</b><h4>
+<h4><b>README Last Edited: 6/12/2018</b><h4>
 <h4><b>Working SoundsLike WebApp: https://soundslikewebapp.herokuapp.com/</b><h4>
 
 <h2><b><u>Summary</u></b></h2>
@@ -65,7 +65,8 @@
 
 <h2><b><u>Known Bugs/Upcoming Improvements</u></b></h2>
 
->* Currently if multiple artists share a song name, the search will select the most popular of potential choices. Future plan to add artist option in the query or typeahead.
+>* Currently if multiple artists share a song name, the search will select the most popular of potential choices. Future plan to ~~add artist option in the query~~(done-so-saures-rex) and typeahead.
 >* Beautification of the page will be continuing in future releases.
+>* Last page is not mobile ready... yet. mwhahaha (Seriously though, it will come)
 >* Considering adding album images for each of the recommended tracks
 >* cleaning code: seperating into multiple JS files for ease of readibility and adding comments
