@@ -1,7 +1,7 @@
 <h1><b>SoundsLike Webapp</b></h1>
 
 <h3><b>Author: Louis Huerta-Blake</b></h3>
-<h4><b>README Last Edited: 5/3/2018</b><h4>
+<h4><b>README Last Edited: 8/27/2018</b><h4>
 
 <h2><b><u>Summary</u></b></h2>
 
@@ -29,7 +29,9 @@
 
 
 <h2><b><u>Version</u></b></h2>
-
+>* 1.1 Auto-Suggest
+>   * Added autosuggest feature during search to further clarify selection
+>
 >* 1.0: Primary release
 >   * Recommends tracks based on entered track and ranges selected
 >   * Displays up to 5 results. Each time the results are random out of all possible recommendations within the given parameters

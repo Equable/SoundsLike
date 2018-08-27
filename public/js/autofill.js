@@ -2,7 +2,6 @@ var autofill = function(){
     var myLength = $('#query').val().length;
     var query = document.getElementById('query').value;
     var items;
-    var text = $("#music");
     $('#music').empty();
     if (myLength >= 3){
        
@@ -42,4 +41,4 @@ $('#query').keypress(function(){
     timeoutID = setTimeout(autofill, 500);
 });
 
-//test
+
