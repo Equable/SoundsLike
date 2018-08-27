@@ -10,10 +10,12 @@ var bodyParser = require('body-parser');
 //Request module loaded
 var request = require('request');
 
-
+app.set('port', (process.env.PORT || 5000));
 //start server
 //0.0.0.0 allows access via LAN connect. Use <Hosting Computer IP Address>:<Port> when on another computer
-app.listen(8888, '0.0.0.0');
+app.listen(app.get('port'), function(){
+  console.log('Node app is running on port', app.get('port'));
+});
 
 
 //ensure EJS is used to render view files
@@ -91,8 +93,8 @@ app.use(function (req, res, next) {
 
 //spotify Authentication
 //
-var client_id = 'your id goes here'; // Your client id
-var client_secret = 'your secret goes here'; // Your secret
+var client_id = 'a1432bfe1bb044cb98e7c697f0260049'; // Your client id
+var client_secret = 'f5892898d23a481dab059d2ec43281a7'; // Your secret
 
 // your application requests authorization
 var authOptions = {

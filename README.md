@@ -1,8 +1,7 @@
 <h1><b>SoundsLike Webapp</b></h1>
 
 <h3><b>Author: Louis Huerta-Blake</b></h3>
-<h4><b>README Last Edited: 6/12/2018</b><h4>
-<h4><b>Working SoundsLike WebApp: https://soundslikewebapp.herokuapp.com/</b><h4>
+<h4><b>README Last Edited: 5/3/2018</b><h4>
 
 <h2><b><u>Summary</u></b></h2>
 
@@ -19,22 +18,6 @@
 >>5. After the user moves the ranges (or choses not to) an AJAX get is used for the recommendation. It takes the values set on each of the sliders as well as the track ID to return a JSON of up to 5 tracks (including other information about that track)
 >>6. The Application then POST's the response to the node server where the data is stored in a variable to be rendered in the 'results' EJS page.
 
-<h2><b><u>How to use</u></b></h2>
-
->1. Make sure you have the latest version of node.js installed. You can find it [here](https://nodejs.org/en/download/).
->2. Obtain a client id/secret id from spotify to use this app which can be obtatined [here](https://beta.developer.spotify.com/dashboard/).
->3. Clone the Soundslike Webapp Repo.
->4. Once you've obtained both ids from spotify navigate to line 91 & 92 of app.js and replace the value for the two parameters with your own clientID and secret.
->5. Save your changes and open the command terminal. Navigate to the location of the repository and run app.js with Node app.js.
->6. You should now be able to navigate to the webapp in your browser using the url: localhost:8888 or using your hosting computers ip address followed by port 8888 (192.168.1.20:8888) for any computer on your LAN.
-
-<h2><b><u>Webapp Looks</u></b></h2>
-
-![Image of Home](https://raw.githubusercontent.com/Equable/SoundsLike/master/images/search.PNG)
-![Image of almost_there1](https://raw.githubusercontent.com/Equable/SoundsLike/master/images/almost_there_1.PNG)
-![Image of almost_there2](https://raw.githubusercontent.com/Equable/SoundsLike/master/images/almost_there_2.PNG)
-![Image of Results](https://raw.githubusercontent.com/Equable/SoundsLike/master/images/results.PNG)
-
 <h2><b><u>Dependencies</u></b></h2>
 
 >* body-parser 1.18.2 </br>
@@ -47,26 +30,12 @@
 
 <h2><b><u>Version</u></b></h2>
 
->* 1.3: Song Previews
->   * Added song previews when available for each song recommended
->   * fixed a bug where the back button would not work
->* 1.2: Mobile Responsiveness
->   * Added mobile scaling to the pages. Should no longer overflow and scale to the screen correctly
->   * Upcoming Updates:
->       * Adding links to recommended songs and artists in next update
->       * Clearing code for readibility (ongoing)
->       * typeahead will be coming within the next week
->* 1.1: Artist filter
->   * Added artist filter to the app, can now filter song choice further by adding the artist to the query.
->   * Added song name to the /almost_there page for confirmation of song selected.
 >* 1.0: Primary release
 >   * Recommends tracks based on entered track and ranges selected
 >   * Displays up to 5 results. Each time the results are random out of all possible recommendations within the given parameters
 
 <h2><b><u>Known Bugs/Upcoming Improvements</u></b></h2>
 
->* Currently if multiple artists share a song name, the search will select the most popular of potential choices. Future plan to ~~add artist option in the query~~(done-so-saures-rex) and typeahead.
+>* Currently if multiple artists share a song name, the search will select the most popular of potential choices. Future plan to add artist option in the query or typeahead.
 >* Beautification of the page will be continuing in future releases.
->* Last page is not mobile ready... yet. mwhahaha (Seriously though, it will come)
 >* Considering adding album images for each of the recommended tracks
->* cleaning code: seperating into multiple JS files for ease of readibility and adding comments

@@ -1,5 +1,5 @@
 // get authentication token to complete recommendation search
-var token = undefined;
+var token;
 var soundsLikeThis = undefined;
 $.ajax({
     url: '/auth',
@@ -77,7 +77,7 @@ var takeitback = function (response) {
         data: { soundsLikeThis, coverIMG, artistName, songName},
 
         success: function (post) {
-           window.location.href = ('/almost_there');
+          window.location.href = ('/almost_there');
         }
     });
 };

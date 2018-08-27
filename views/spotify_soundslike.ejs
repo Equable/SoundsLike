@@ -16,11 +16,13 @@
 </head>
 
 <body>
+  <datalist id="music">
+  </datalist>
   <div class="container">
     <h1>SoundsLike Webapp</h1></br>
     <p>Type a track name exactly and click on "Search". The application will then load more options before the final suggestion.</p></br>
     <form id="search-form">
-      <input type="text" id="query" value="" class="form-control" placeholder="Type an Track Name, artist(optional)" /></br>
+    <input id="query" type="text" class="form-control" placeholder="Track Name, Artist(optional)" list="music" autocomplete="off"/></br>
       <input type="submit" id="search" class="btn btn-primary" value="Search" />
     </form>
   </div>
@@ -29,9 +31,8 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="/bootstrap/js/bootstrap.min.js"></script>
-  <script src="/typeahead/typeahead.bundle.min.js"></script>
   <script src="/public/js/SoundsLike.js"></script>
-  <!-- <script src="/public/js/sliders.js"></script> -->
+  <script src="/public/js/autofill.js"></script>
 
 
 
