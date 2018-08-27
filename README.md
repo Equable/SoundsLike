@@ -29,6 +29,7 @@
 
 
 <h2><b><u>Version</u></b></h2>
+
 >* 1.1 Auto-Suggest
 >   * Added autosuggest feature during search to further clarify selection
 >
