@@ -29,7 +29,10 @@
 
 
 <h2><b><u>Version</u></b></h2>
-
+>* 1.2 Mobile Friendly results
+>   * Made results mobile Friendly
+>   * Images of album now posted on results page
+>
 >* 1.1 Auto-Suggest
 >   * Added autosuggest feature during search to further clarify selection
 >
