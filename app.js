@@ -45,7 +45,7 @@ app.get('/auth', function (req, res) {
   res.send({ token: token });
 });
 
-//takes audio_feature gained from client side on main page 
+//takes audio_feature gained from client side on main page
 //then renders a new view with track information
 //and feautres to be used in the ranges we want to edit
 
@@ -83,6 +83,9 @@ app.get('/results', function (req, res){
   res.render('results', {finalResults});
 });
 
+app.get('/finalres', function (req, res){
+  res.send({finalResults});
+});
 
 
 //404 response
@@ -120,11 +123,3 @@ request.post(authOptions, function (error, response, body) {
 
   }
 });
-
-
-
-
-
-
-
-
