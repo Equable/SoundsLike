@@ -96,8 +96,8 @@ app.use(function (req, res, next) {
 
 //spotify Authentication
 //
-var client_id = 'a1432bfe1bb044cb98e7c697f0260049'; // Your client id
-var client_secret = 'f5892898d23a481dab059d2ec43281a7'; // Your secret
+var client_id = '########'; // Your client id
+var client_secret = '###########'; // Your secret
 
 // your application requests authorization
 var authOptions = {
